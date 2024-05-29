@@ -11,7 +11,7 @@ const Modal = ({ visible, onClose, allowClickOutside, children }: modalProps) =>
 
   return (
     <div
-      className={`fixed z-20 w-full h-100 inset-0 flex justify-center items-center transition-colors ${visible ? "visible bg-black/20" : "invisible"}`}
+      className={`fixed z-30 w-full h-100 inset-0 flex justify-center items-center transition-colors ${visible ? "visible bg-black/20" : "invisible"}`}
       {...(allowClickOutside ? { onClick: onClose } : {})}
     >
       <div
