@@ -13,9 +13,7 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${poppins.className}`}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </div>
   )
 }
